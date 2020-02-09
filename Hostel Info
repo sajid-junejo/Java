@@ -1,0 +1,68 @@
+
+public class RashidiHostel {
+	int RoomNumber;
+	String Name1;
+	String Name2;
+	String Name3;
+	public void MessageForRoommates(){
+		System.out.println("Please MAke Understanding to your roommates");
+	}
+	public void MessageForAllHostlers(){
+		System.out.println("Please play games to be healthy and do study on study time\n\n\n");
+	}
+	
+	
+	
+	public static void main(String[] args){
+		//Making Objects
+		RashidiHostel Room1 = new RashidiHostel();
+		RashidiHostel Room2 = new RashidiHostel();
+		RashidiHostel Room3 = new RashidiHostel();
+		
+		//Object Room1 Starts from here
+		Room1.RoomNumber = 118;
+		Room1.Name1 = "Sajid";
+		Room1.Name2 = "Aasif";
+		Room1.Name3 = "Naveed";
+		
+		//Output
+		System.out.println("<<Room 118 Starting...>>\n\n");
+		System.out.println("Room Number "+ Room1.RoomNumber);
+		System.out.println("Roommate Name1 -> "+Room1.Name1);
+		System.out.println("Roommate Name2 -> "+Room1.Name2);
+		System.out.println("Roommate Name3 ->"+Room1.Name3);
+		Room1.MessageForRoommates();
+		Room1.MessageForAllHostlers();
+		
+		//Object Room2 Starts from here
+		System.out.println("<<Room 114 Starting...>>\n\n");
+		Room2.RoomNumber = 114;
+		Room2.Name1 = "Turab";
+		Room2.Name2 = "Naresh";
+		Room2.Name3 = "Jatendar";
+		//Output
+		System.out.println("Room Number "+ Room2.RoomNumber);
+		System.out.println("Roommate Name1 -> "+Room2.Name1);
+		System.out.println("Roommate Name2 -> "+Room2.Name2);
+		System.out.println("Roommate Name3 -> "+Room2.Name3);
+		Room2.MessageForRoommates();
+		Room2.MessageForAllHostlers();
+		
+		
+		//Objects Room3 Starts from here
+		Room3.RoomNumber = 107;
+		Room3.Name1 = "Faheem";
+		Room3.Name2 = "SAlih";
+		Room3.Name3 = "Qurban";
+		//Outputs
+		System.out.println("<<Room 107 Starting...>>\n\n");
+		System.out.println("Room Number "+ Room3.RoomNumber);
+		System.out.println("Roommate Name3 -> "+Room3.Name1);
+		System.out.println("Roommate Name3 -> "+Room3.Name2);
+		System.out.println("Roommate Name3 -> "+Room3.Name3);
+		Room3.MessageForRoommates();
+		Room3.MessageForAllHostlers();
+		
+	}
+
+}
