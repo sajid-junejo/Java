@@ -1,0 +1,55 @@
+public class Car{
+	 String carName;
+     int yearModel;
+     String manufacturer;
+     int speed;
+     public void getKnow(){
+    	 System.out.println("Nowadays every want to have his/her personal car \n\n");
+     }
+      
+   
+    public static void main(String[] args){
+    	Car car1 = new Car();
+    	Car car2 = new Car();
+    	Car car3 = new Car();
+    	
+    	car1.carName = "Mercedes";
+    	car1.yearModel = 2020;
+    	car1.manufacturer = "Daimler-Benz";
+    	car1.speed = 320;
+    	//car1 properties 
+    	System.out.println("(: WeLcoMe to "+car1.carName+":)");
+    	System.out.println("Car Name -> "+car1.carName);
+    	System.out.println("Model of CAr -> "+car1.yearModel);
+    	System.out.println("MAnufecturer of Car -> "+car1.manufacturer);
+    	System.out.println("Speed of Car -> "+car1.speed);
+    	car1.getKnow();
+    	
+    	//car2 properties
+    	car2.carName = "Cultus";
+    	car2.yearModel = 2019;
+    	car2.manufacturer = "Suzuki";
+    	car2.speed = 220;
+    	System.out.println("(: WeLcoMe to "+car2.carName+":)");
+    	System.out.println("Car Name -> "+car2.carName);
+    	System.out.println("Model of CAr -> "+car2.yearModel);
+    	System.out.println("MAnufecturer of Car -> "+car2.manufacturer);
+    	System.out.println("Speed of Car -> "+car2.speed);
+    	car2.getKnow();
+    	
+    	
+    	//car 3 Properties
+    	car3.carName = "Corrola";
+    	car3.yearModel = 2019;
+    	car3.manufacturer = "Toyota";
+    	car3.speed = 240;
+    	System.out.println("(: WeLcoMe to "+car3.carName+":)");
+    	System.out.println("Car Name -> "+car3.carName);
+    	System.out.println("Model of CAr -> "+car3.yearModel);
+    	System.out.println("MAnufecturer of Car -> "+car3.manufacturer);
+    	System.out.println("Speed of Car -> "+car3.speed);
+    	car3.getKnow();
+    	
+    }
+ 
+}
