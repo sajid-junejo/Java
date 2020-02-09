@@ -1,0 +1,51 @@
+
+class ShoppingSystem{
+	String ShopKeeperName;
+	String TypeOfShop;
+	String Address;
+	public void doWelcome(){
+		System.out.println("Hello EveryOne WelCome to My Shop");
+	}
+	public void doShopping(){
+		System.out.println("Please do Shopping because here is 50% Sale\n\n");
+	}
+	public static void main(String[] args){
+		ShoppingSystem a = new ShoppingSystem();
+		ShoppingSystem b = new ShoppingSystem();
+		ShoppingSystem c = new ShoppingSystem();
+		
+		//1st Shop
+		a.ShopKeeperName = "Sajid";
+		a.TypeOfShop = "General Stroe";
+		a.Address = "Giddu Chowk Hyderabad";
+		a.doWelcome();
+		System.out.println("Shop Keeper's Name"+a.ShopKeeperName);
+		System.out.println("Type of Shop"+a.TypeOfShop);
+		System.out.println("Address of Shop"+a.Address);
+		
+		a.doShopping();
+		
+		//2nd Shop
+		b.ShopKeeperName = "Shaikh Shop";
+		b.TypeOfShop = "Medical Store";
+		b.Address = "LAtifAbad 9";
+		b.doWelcome();
+		System.out.println("Shop Keeper's Name"+a.ShopKeeperName);
+		System.out.println("Type of Shop"+b.TypeOfShop);
+		System.out.println("Addres of Shop"+b.Address);
+		b.doWelcome();
+		b.doShopping();
+		
+		//3rd Shop
+		c.ShopKeeperName = "Mola Jutt";
+		c.TypeOfShop = "Cosmats Shop";
+		c.Address = "Near Poonam Pump";
+		c.doWelcome();
+		System.out.println("Shop Keeper Name"+c.ShopKeeperName);
+		System.out.println("Type of Shop"+c.TypeOfShop);
+		System.out.println("Addres of SHop"+c.Address);
+		c.doWelcome();
+		c.doShopping();
+
+	}
+}
