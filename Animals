@@ -1,0 +1,50 @@
+
+public class Animals {
+	String name; 
+	String makeSound;
+	String eats;
+	public void LegsOfAnimal(){
+		System.out.println("This Animal has 4 legs\n\n\n");
+	}
+	
+
+	public static void main(String[] args) {
+		
+		Animals Cat = new Animals();
+		Animals Dog = new Animals();
+		Animals Lion = new Animals();
+		
+		
+		//Cat object start from here
+		Cat.name = "Cat";
+		Cat.makeSound = "Meow, Meow, ...";
+		Cat.eats = "meat";
+		System.out.println("The of Animal is ->"+Cat.name);
+		System.out.println("Sound of Animal ->"+Cat.makeSound);
+		System.out.println("Food eaten by ->"+Cat.eats);
+		Cat.LegsOfAnimal();
+		
+		
+		//Dog object start from here
+		Dog.name = "Dog";
+		Dog.makeSound = "Bhau Bhau";
+		Dog.eats = "meat, bones";
+		System.out.println("The of Animal is ->"+Dog.name);
+		System.out.println("Sound of Animal ->"+Dog.makeSound);
+		System.out.println("Food eaten by Animal->"+Dog.eats);
+		Dog.LegsOfAnimal();
+		
+		//Lion object start from here
+		Lion.name = "Cat";
+		Lion.makeSound = "Meow, Meow, ...";
+		Lion.eats = "meat";
+		System.out.println("The of Animal is ->"+Lion.name);
+		System.out.println("Sound of Animal ->"+Lion.makeSound);
+		System.out.println("Food eaten by ->"+Lion.eats);
+		Lion.LegsOfAnimal();
+		
+		
+
+	}
+
+}
