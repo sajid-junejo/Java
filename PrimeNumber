@@ -1,0 +1,51 @@
+import java.lang.Math;       
+public class Prime{
+        	void checkPrime(int num){
+        
+        boolean isPrime = false;
+        for(int i = 2; i <= num/2; ++i)
+        {
+            
+            if(num % i == 0)
+            {
+                isPrime = true;
+                break;
+            }
+        }
+        if (!isPrime){
+            System.out.println(num + " is a prime number.");
+         generateTable(num);   
+        }
+        else
+        {
+            System.out.println(num + " is not a prime number.");
+            toCheckEven(num);
+        }
+        	}
+        	void generateTable(int n){
+        		for(int i = 1; i<=10;i++){
+        			System.out.println(n+" Times "+i+" is equal to "+n*i);
+        		}
+        	}
+        	void makeSquare(int no){
+        		int result = (int) Math.sqrt(no);
+        		System.out.println("Square Root "+no+" is "+result);
+        	}
+        	void makePower(int num){
+        		System.out.println(num+" is not prime number so power of "+num+" is "+Math.pow(num, 4));
+        	}
+        	void toCheckEven(int number){
+        		if(number%2==0)
+        		{
+        			makeSquare(number);
+        		}
+        		else
+        		{
+        			makePower(number);
+        		}
+        	}
+        	public static void main(String[] args){
+        		Prime p = new Prime();
+        		p.checkPrime(9);
+        	}
+        }
