@@ -1,0 +1,107 @@
+import java.util.Scanner;
+public class Gymnasium {
+	String Std_Name;
+	String Roll_No;
+	String Reg_Month;
+	int Reg_Year;
+	int Reg_Fee;
+	Scanner s = new Scanner(System.in);
+	void GymManagementMenu(){
+		System.out.print("\n\n\n\t"+"(: WeLcome to Gymnasium :)"+"\n");
+		System.out.print("\t"+"(: Here is Menu For You :)"+"\n");
+		System.out.print("-> 1 Registration \n");
+		System.out.print("-> 2 View Info \n");
+		System.out.print("-> 3 Update \n");
+		System.out.print("-> 4 Delete Info \n");
+		System.out.print("-> 5 Close \n");
+		
+	}
+	void doRegestration(){
+		System.out.println("(: Please Enter Your Information :)");
+		System.out.println(" Enter Your Name ");
+		Std_Name = s.next();
+		System.out.println(" Enter Your Roll Number ");
+		Roll_No = s.next();
+		System.out.println(" Enter Your Registration Month ");
+		Reg_Month = s.next();
+		System.out.println(" Enter Your Registration Year ");
+		Reg_Year = s.nextInt();
+		System.out.println(" Enter Your Registration Fee ");
+		Reg_Fee = s.nextInt();
+		doSelect();
+	}
+   void doView(){
+	   System.out.println("       Hey...!!! \n WeLcome To Your Information  ");
+	   System.out.println(" Name Of The Student "+Std_Name);
+	   System.out.println(" Roll Number Of The Student "+Roll_No);
+	   System.out.println(" Registratio Month "+Reg_Month);
+	   System.out.println(" Registration Year "+Reg_Year);
+	   System.out.println(" Registration Fee "+Reg_Fee);
+	   doSelect();
+   }
+   void doUpdate(){
+	   System.out.println(" Kindly Enter Your Roll Number ");
+	   String RollNumber = s.next();
+	   if(Roll_No.equals(RollNumber));{
+	   System.out.println("\n\n"+"(: Mission Succesful \n Now You Can Update Your Info :)"+" ");
+	   System.out.println("\n\n"+" Enter Your Name ");
+		Std_Name = s.next();
+		System.out.print(" Enter Your Roll Number ");
+		Roll_No = s.nextLine();
+		System.out.println(" Enter Your Registration Month ");
+		Reg_Month = s.next();
+		System.out.println(" Enter Your Registration Year ");
+		Reg_Year = s.nextInt();
+		System.out.println(" Enter Your Registration Fee ");
+		Reg_Fee = s.nextInt();}
+       doSelect();
+	   }
+	void doDelete(){
+		System.out.println(" Kindly Follow the Process ");
+		String Roll = s.nextLine();
+		if(Roll_No.equals(Roll));
+		Std_Name = null;
+	    Roll_No  = null;
+		Reg_Month = null;
+	    Reg_Year = 0;
+		 Reg_Fee = 0;
+		doSelect();
+	}
+	void doClose(){
+		
+	}
+	void doSelect(){
+		GymManagementMenu();
+		int Choice = s.nextInt();
+		if(Choice==1)
+		{
+			doRegestration();
+		}
+		else if(Choice==2)
+		{
+			doView();
+		}
+		else if(Choice==3)
+		{
+			doUpdate();
+		}
+		else if(Choice==4)
+		{
+			doDelete();
+		}
+		else
+		{
+			doClose();
+		}
+		
+	}
+	public static void main(String[] args)
+	{
+		Gymnasium G = new Gymnasium();
+		G.doSelect();
+	}
+	
+	   
+   }
+
+
