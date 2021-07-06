@@ -1,0 +1,16 @@
+public class Program {
+	public static boolean isSameNum(int x, int y) {
+		if(x==y)
+		{
+			return true;
+		}
+		else 
+			return false;
+		
+	}
+	public static void main(String []args)
+	{
+		Program p = new Program();
+		System.out.println(p.isSameNum(2,3));
+	}
+}
