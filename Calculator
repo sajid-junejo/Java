@@ -1,0 +1,71 @@
+//Task 3
+import java.util.Scanner;
+public class Calculator {
+	float a,b;
+	char op;
+    char decision;
+	void Calculate(){
+		
+		Scanner s = new Scanner(System.in);
+System.out.println("Input value 1");
+		a = s.nextFloat();
+		System.out.println("Input value 2");
+		b = s.nextFloat();
+System.out.println("Input Operator e.g. ( +, -, *, /)");
+
+/*System.out.println("Input value 2");
+b = s.nextFloat();*/
+
+		op = s.next().charAt(0);
+		if(op=='+'){
+			System.out.print((float)(a+b));
+		}
+		else if(op=='-')
+		{
+			System.out.print((float)(a-b));
+		}
+                else if(op=='*'){
+                System.out.println((float)(a*b));
+		
+	}
+                else if(op=='/'){
+                	try{
+                System.out.println((float)(a/b));
+                	}catch(Exception e)
+                	{
+                		
+                	}
+}
+                else {
+                System.out.println("Invalid Input");
+}
+ AnOther();		
+}
+	void AnOther()
+	{
+		System.out.println("Do Another Y/N");
+		
+		Scanner b = new Scanner(System.in);
+		decision = b.nextLine().charAt(0);
+		
+		switch(decision)
+		{
+		case 'Y':
+			Calculate();
+			break;
+		case 'N':
+			System.out.println("------------------------------------------------");
+			break;
+		}
+	
+	}
+	
+	public static void main(String[] args)
+	{
+		Calculator c = new Calculator();
+		
+		c.Calculate();
+		
+	}
+
+}
